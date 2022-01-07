@@ -1,0 +1,12 @@
+.background {
+  height: 1000vh;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  //background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  // background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1B2947); 
+  // background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 40%,#E96F92 65%,#F7F7B6);
+  background: radial-gradient(1000% 100%  at top center, #090A0F 0%, #1B2735 20%, #1B2947 95%, #75517D 98%,#F7F7B6);
+  background: radial-gradient(1000% 100%  at top center, #090A0F 0%, #1B2735 60%, #1B2947 90%, #75517D 95%, #F7F7B6);
+
+}

@@ -1,0 +1,36 @@
+#stars {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  //box-shadow: done by js
+  animation: animStar 400s linear infinite;
+}
+
+#stars2 {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  //box-shadow: done by js
+  animation: animStar 200s linear infinite;
+}
+
+#stars3 {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  //box-shadow: done by js
+  animation: animStar 50s linear infinite;
+}
+
+@keyframes animStar {
+  from {
+    transform: scale(1) translateX(-50%) translateY(-50%)
+  }
+
+  to {
+    transform: scale(2);
+  }
+}
