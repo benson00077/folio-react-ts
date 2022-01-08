@@ -8,56 +8,57 @@ export const enFolio: folio = {
     showRepoLink: true,
   },
   menu: {
-    home: "Hello",
-    about: "Resume",
+    home: "START",
+    about: "RESUME",
+    portfolio: "PORTFOLIO"
   },
   intro: {
     headline: "Hello, I'm Benson",
-    typed: ["I'm a front-end developer", "who can edit JSON", "and deploy it."],
+    typed: ["I'm a software egineer", "I mainly use JavaScirpt", "and React"],
   },
   resume: {
-    headline: "Describe yourself in one quick sentence",
+    headline: "I develop and maintain codes",
     summary: [
-      "Expand on that information in more depth in a few short paragraphs",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "Including: front-end code and RPA projects. I believe code can make life easier and better",
+      "I'm also a Korean tutor. I use code to refine my teaching materials",
     ],
-    jobsHeadline: "Employment",
+    jobsHeadline: "Experience",
     jobs: [
       {
-        title: "VP of Something",
-        company: "Fancy LLC",
-        timeframe: "2015-2020",
+        title: "Software Engineer",
+        company: "Cafe24 Corp. Taiwan Branch",
+        timeframe: "2021-2022",
         summary:
-          "List all the cool stuff you did here. Don't be shy, but be honest and specific.",
+          "I build and integrate RPA scirpts mainly for our finance dept, which a lot of time for user and hlep them focus on their main business logic. The script work on Selenium, writing in JavaScript and levergae MySQL database. Also, I maintain shopping mall websites front-end code built by our plateform",
       },
       {
-        title: "Director of Stuff",
-        company: "Neato Inc.",
-        timeframe: "2010-2015",
+        title: "International Sales",
+        company: "Pioneer Material Precision Tech, Inc.",
+        timeframe: "2019-2020",
         summary:
-          "Highlight some accomplishments in these descriptions. Sometimes people even read them.",
+          "I manage schedule of porducst (components of elastomer and it's combination of dissimilar materials) from proto build to ramp build, handle complaint from FATP and pormote product and solution to end-customer",
       },
       {
-        title: "Developer",
-        company: "WorkJob Co.",
-        timeframe: "2005-2010",
+        title: "Administrative Asistant",
+        company: "URG Co. Korean",
+        timeframe: "2018-2019",
         summary:
-          "Action works and quantified results help explain what you really did in a job.",
+          "I translate marketing documents and help communicate with Chna agency. It's a part-time jpb in a cosmetic company in Korea.",
       },
     ],
     toolsHeadline: "Skills",
     tools: [
       {
-        name: "Software",
-        list: "Something, Another, Expertise",
+        name: "Language",
+        list: "JavaSCript / TypeScript, SQL, Python",
       },
       {
-        name: "Awards & Publications",
-        list: "LookieLookie 2018, BigTime Magazine",
+        name: "Framworks & Libaray",
+        list: "React & Hooks, Redux, CSS in JS (Styled Component), CSS3 & SCSS, Webpack",
       },
       {
         name: "Utilities",
-        list: "Git, npm, at least",
+        list: "Git, npm, Selenium, Jest",
       },
     ],
   },
@@ -70,23 +71,29 @@ export const enFolio: folio = {
       projects: [
         {
           id: "section-1-project-1",
-          title: "My Cool Project",
+          title: "DAG draggable To Do List",
           summary:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+            "A to-do-list based on dag data struture that helps user to kepp track of the work flow among those to-dos",
           image: "",
           links: [
             {
               label: "Example",
-              url: "https://github.com/doublejosh/react-portfolio",
+              url: "https://benson00077.github.io/dag_graph-ts/",
             },
           ],
         },
         {
           id: "section-1-project-2",
-          title: "Another One",
+          title: "K-drama Korean-larning Platform",
           summary:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+            "User cna Search by Kreaon Verb·Adjective, and access related K-drama lines with Chinese & English translation",
           image: "",
+          links: [
+            {
+              label: "Example",
+              url: "https://benson00077.github.io/kosub_react/about",
+            },
+          ],
         },
         {
           id: "section-1-project-3",

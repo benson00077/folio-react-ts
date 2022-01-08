@@ -13,6 +13,7 @@ export default interface folio {
   menu: {
     home: string;
     about: string;
+    portfolio: string;
   };
   intro: {
     headline: string;

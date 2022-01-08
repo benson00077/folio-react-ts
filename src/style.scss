@@ -1,13 +1,13 @@
-@import 'variables';
-
+@import "variables";
 
 /* Hide scroll bar */
 body {
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
+  height: 1000vh;
 }
 body::-webkit-scrollbar {
   display: none;
-} 
+}
 
 h1,
 h2,
@@ -15,6 +15,24 @@ h3,
 h4,
 h5,
 h6 {
-    color: $heading-color;
+  color: $heading-color;
 }
 
+.littel-prince-fly {
+  position: absolute;
+  left: -20rem;
+  top: 42rem;
+  img {
+    width: 16rem;
+  }
+}
+
+.littel-prince-sit {
+  position: absolute;
+  right: 0;
+  bottom: 15rem;
+  height: 50vh; //related w/ parallax spped
+  img {
+    width: 16rem;
+  }
+}

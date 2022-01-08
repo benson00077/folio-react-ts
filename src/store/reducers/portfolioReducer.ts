@@ -17,7 +17,6 @@ export const languageReducer = (
     case "EN":
       return enFolio;
     default:
-      console.log(state)
       return state;
   }
 };

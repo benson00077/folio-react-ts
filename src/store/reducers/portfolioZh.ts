@@ -8,8 +8,9 @@ export const zhFolio: folio = {
     showRepoLink: true,
   },
   menu: {
-    home: "Hello",
-    about: "Resume",
+    home: "START",
+    about: "RESUME",
+    portfolio: "PORTFOLIO"
   },
   intro: {
     headline: "Hi. Let's talk.",
