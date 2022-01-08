@@ -1,7 +1,8 @@
-import { folio } from "../../models/portfolio";
+import folio from "../../models/portfolio";
 
 export const enFolio: folio = {
   meta: {
+    language: "EN",
     title: "My Portfolio",
     description: "Lots of info about you.",
     showRepoLink: true,
@@ -11,7 +12,7 @@ export const enFolio: folio = {
     about: "Resume",
   },
   intro: {
-    headline: "Hi. Let's talk.",
+    headline: "Hello, I'm Benson",
     typed: ["I'm a front-end developer", "who can edit JSON", "and deploy it."],
   },
   resume: {

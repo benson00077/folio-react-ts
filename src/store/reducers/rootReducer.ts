@@ -1,8 +1,8 @@
-import portfolioReducer from "./portfolioReducer";
+import { languageReducer } from "./portfolioReducer";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-  portfolio: portfolioReducer,
-})
-
-export default rootReducer
+  portfolio: languageReducer,
+});
+export type RootState = ReturnType<typeof rootReducer>
+export default rootReducer;

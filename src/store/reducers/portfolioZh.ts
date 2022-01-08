@@ -1,7 +1,8 @@
-import { folio } from "../../models/portfolio";
+import folio from "../../models/portfolio";
 
 export const zhFolio: folio = {
   meta: {
+    language: "ZH",
     title: "這是標題",
     description: "Lots of info about you.",
     showRepoLink: true,

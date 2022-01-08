@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './style.scss'
 import './index.css';
 // Store
-import { compose, createStore } from 'redux';
+import { createStore } from 'redux';
 import rootReducer from './store/reducers/rootReducer';
 import { Provider } from 'react-redux';
 
