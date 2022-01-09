@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import Resume from "./components/Resume/Resume";
 // Components
 import { Background } from "./components/Background";
 import Intro from "./components/Intro/Intro";
@@ -10,21 +12,32 @@ import NavBar from "./components/NavBar/NavBar";
 // store
 import { useSelector } from "react-redux";
 import { RootState } from "./store/reducers/rootReducer";
-import Resume from "./components/Resume/Resume";
 
 function App() {
   const folio = useSelector((state: RootState) => state.portfolio);
+
+  const [pageYOffset, setPageYOffset] = useState(window.pageYOffset)
+  const scrollHandler = () => setPageYOffset(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler)
+    return () => {
+      window.removeEventListener("scroll", scrollHandler)
+    }
+  }, [])
+
   return (
     <ParallaxProvider>
-      <Background stars={false}>
+      <Background stars={false} startsNum={[15, 30, 70]}>
         <SwitchLanguage />
         <NavBar />
         <Intro {...folio.intro}/>
-        <Resume {...folio.resume} />
+        <Resume resume={folio.resume} pageYOffset={pageYOffset}/>
 
         <Parallax
           className="littel-prince-fly"
           x={[-300, 600]}
+          y={[10, -150]}
           styleInner={{ transition: "all 0.5s ease-out" }}
           tagOuter="figure"
         >

@@ -1,0 +1,23 @@
+.tools , .tools-offset {
+  position: absolute;
+  left: 2rem;
+  width: 50vw;
+  height: 50vh;
+  border: solid 1px white;
+  width: 40vw;
+  padding: 0 1rem 0 1rem;
+  overflow-y: hidden;
+}
+
+.tools {
+  left: 50%;
+}
+
+.tools-offset {
+  top: 50%;
+}
+
+.profile-circle {
+  position: absolute;
+}
+
