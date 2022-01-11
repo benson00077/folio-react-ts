@@ -8,7 +8,7 @@ const iconsWithStyle = [
   <SiJavascript style={{ height: "50px", width: "50px" }} fill="#F7DF1E" />,
   <SiTypescript style={{ height: "50px", width: "50px" }} fill="#1572B6" />,
   <SiMysql style={{ height: "50px", width: "50px" }} fill="#4479A1" />,
-  <img src={python} style={{ height: "50px", width: "50px", }}></img>,
+  <img src={python} style={{ height: "50px", width: "50px", }} alt="python"></img>,
 
   <SiReact style={{ height: "50px", width: "50px" }} fill="#61DAFB" />,
   <SiRedux style={{ height: "50px", width: "50px" }} fill="#764ABC" />,
