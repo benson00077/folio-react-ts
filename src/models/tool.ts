@@ -1,4 +1,4 @@
 export default interface Tool {
-    name: string
-    list: string
+    type: string
+    list: string[]
 }

@@ -1,23 +1,50 @@
-.tools , .tools-offset {
-  position: absolute;
+.tools-layout {
+  position: relative;
   left: 2rem;
-  width: 50vw;
-  height: 50vh;
+  width: $width-tools;
+  height: $height-tools;
   border: solid 1px white;
-  width: 40vw;
-  padding: 0 1rem 0 1rem;
   overflow-y: hidden;
 }
 
-.tools {
-  left: 50%;
+.tools-layout h3 {
+  display: flex;
+  justify-content: center;
 }
+
+.tool-type-name {
+  font-weight: 600;
+}
+
+.tool-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tools-group {
+  display: flex;
+  flex-direction: column;
+  
+  .tool-icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    box-shadow: -4px -4px 13px $bg-color, 4px 4px 13px #292829;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .tool-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
 
 .tools-offset {
   top: 50%;
 }
-
-.profile-circle {
-  position: absolute;
-}
-

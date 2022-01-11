@@ -49,16 +49,16 @@ export const zhFolio: folio = {
     toolsHeadline: "Skills",
     tools: [
       {
-        name: "Software",
-        list: "Something, Another, Expertise",
+        type: "Language",
+        list: ["JavaScript", "TypeScript", "SQL", "Python"],
       },
       {
-        name: "Awards & Publications",
-        list: "LookieLookie 2018, BigTime Magazine",
+        type: "Framworks & Libaray",
+        list: ["React & Hooks", "Redux", "CSS in JS", "SCSS"],
       },
       {
-        name: "Utilities",
-        list: "Git, npm, at least",
+        type: "Utilities",
+        list: ["Git", "npm",  "Webpack", "Selenium", "Jest"],
       },
     ],
   },

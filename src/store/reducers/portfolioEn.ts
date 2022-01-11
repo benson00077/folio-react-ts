@@ -49,16 +49,16 @@ export const enFolio: folio = {
     toolsHeadline: "Skills",
     tools: [
       {
-        name: "Language",
-        list: "JavaSCript / TypeScript, SQL, Python",
+        type: "Language",
+        list: ["JavaScript", "TypeScript", "SQL", "Python"],
       },
       {
-        name: "Framworks & Libaray",
-        list: "React & Hooks, Redux, CSS in JS (Styled Component), CSS3 & SCSS, Webpack",
+        type: "Framworks & Libaray",
+        list: ["React & Hooks", "Redux", "CSS in JS", "SCSS"],
       },
       {
-        name: "Utilities",
-        list: "Git, npm, Selenium, Jest",
+        type: "Utilities",
+        list: ["Git", "npm",  "Webpack", "Selenium", "Jest"],
       },
     ],
   },

@@ -1,24 +1,36 @@
+@import "_var.scss";
 @import "summary.scss";
 @import "tools.scss";
 @import "jobs.scss";
 
 .resume {
   position: absolute;
-  top: 95vh;
-  left: 0;
-  width: 100vw;
-  height: 200vh;
-  background-color: rgba(184, 161, 161, 0.5);
+  top: $top-resume;
+  left: $left-resume;
+  width: $width-resume;
+  height: $height-resume;
+  background-color: $bg-color;
   clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
   padding-top: 20vh;
 
   h3 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   p {
     font-weight: 300;
     font-size: 1.5rem;
   }
+}
+
+
+
+// For Parallax outer's meta-position preset 
+.summary-outer {
+  position: relative;
+  left: 2rem;
+  width: $width-summary;
+  height: $height-summary;
+  border: solid red 1px;
 }

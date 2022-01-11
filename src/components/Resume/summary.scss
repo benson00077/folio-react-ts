@@ -1,9 +1,8 @@
 
 .summary {
-  position: absolute;
-  left: 2rem;
   border: solid 1px white;
-  width: 40vw;
+  width: $width-summary;
+  height: $height-summary;
   padding: 0 1rem 0 1rem;
   overflow-y: hidden;
 }
@@ -16,6 +15,7 @@
     padding: 0 0 0 12px;
   }
 }
+
 
 .profile-circle { 
   position: absolute;
