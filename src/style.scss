@@ -1,5 +1,15 @@
 @import "variables";
 
+
+/* init */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+
 /* Hide scroll bar */
 body {
   -ms-overflow-style: none;
@@ -9,15 +19,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $heading-color;
-}
 
+// img posn meta for parallax
 .littel-prince-fly {
   position: absolute;
   left: -20rem;

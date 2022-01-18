@@ -54,7 +54,7 @@ export const zhFolio: folio = {
       },
       {
         type: "Framworks & Libaray",
-        list: ["React & Hooks", "Redux", "CSS in JS", "SCSS"],
+        list: ["React", "Redux", "CSS in JS", "SCSS"],
       },
       {
         type: "Utilities",

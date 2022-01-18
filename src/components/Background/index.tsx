@@ -9,6 +9,7 @@ export const Background = (props: {
   startsNum: number[];
   children: React.ReactNode;
 }) => {
+  
   useEffect(() => {
     if (!props.stars) return;
     const [n1, n2, n3] = props.startsNum

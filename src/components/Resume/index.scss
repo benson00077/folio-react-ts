@@ -1,0 +1,26 @@
+@import "_var.scss";
+@import "./Summary/summary.scss";
+@import "./Tools/tools.scss";
+@import "./Jobs/jobs.scss";
+
+.resume {
+  // position: absolute;
+  // top: $top-resume;
+  // left: $left-resume;
+  height: $height-resume;
+  // background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 0;
+
+  h3 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+}

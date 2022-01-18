@@ -1,13 +1,14 @@
 $bg-color: rgba(184, 161, 161, 0.281);
 
 
-// posn & size
-$width-resume: 95vw;
+/**  posn & si */
+// height
 $height-resume: 300vh;
-$top-resume: 95vh;
-$left-resume: 2.5vw;
-
-$width-summary: 95vw;
 $height-summary: 100vh;
 $height-tools: 100vh;
+// width
+$width-resume: 95vw;
+$width-summary: 75vw;
 $width-tools: 95vw;
+// top and left 
+$top-resume: 100vh;

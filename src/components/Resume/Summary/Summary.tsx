@@ -1,12 +1,12 @@
-import React from "react";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import React, { useRef, useEffect } from "react";
+import { Parallax } from "react-scroll-parallax";
 // Assets
 import profilePhoto from "../../../assets/bensontuan.png";
 // store
 import { useSelector } from "react-redux";
 import { RootState } from "../../../store/reducers/rootReducer";
 
-function Summary(props: {clipPath: string}) {
+function Summary() {
 
   const resume = useSelector((state: RootState) => state.portfolio.resume)
   const { headline, summary } = resume
@@ -16,29 +16,23 @@ function Summary(props: {clipPath: string}) {
   const profilePohtoHeigth = vh * 0.21
   const profilePhotoWidth = vw * 0.17
 
+  const clipPath = "polygon(0 7%, 100% 0, 100% 92%, 0% 100%)";
+
   return (
-    <div className="summary" style={{clipPath: props.clipPath,}}>
-      <ParallaxBanner
-        className="banner"
-        layers={[
-          {
-            image: "test.png",
-            amount: 0.2,
-          },
-        ]}
-        style={{
-          height: "500px",
-        }}
-      ></ParallaxBanner>
-      <img
-        src={profilePhoto}
-        alt="little-prince-fly.png"
-        style={{ width: profilePhotoWidth * 0.9 }}
-      ></img>
+    <div className="summary" >
+
       <div>
-        <p>{headline}</p>
+        <img
+          src={profilePhoto}
+          alt="little-prince-fly.png"
+          style={{ width: profilePhotoWidth * 0.9 }}
+        ></img>
       </div>
+
       <div>
+
+        <p>{headline}</p>
+
         {summary.map((sum, i) => (
           <p key={i}>{sum}</p>
         ))}

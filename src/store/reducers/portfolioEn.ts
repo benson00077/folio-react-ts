@@ -29,14 +29,13 @@ export const enFolio: folio = {
         company: "Cafe24 Corp. Taiwan Branch",
         timeframe: "2021-2022",
         summary:
-          "I build and integrate RPA scirpts mainly for our finance dept, which a lot of time for user and hlep them focus on their main business logic. The script work on Selenium, writing in JavaScript and levergae MySQL database. Also, I maintain shopping mall websites front-end code built by our plateform",
-      },
+          "I build and integrate RPA scirpts mainly for our finance dept. The script automate user's redundant processes and increase their's productivity, let them focus on their main business logic. The script run on Selenium, composed in JavaScript and levergae MySQL database. Also, I maintain shopping mall websites front-end code built by our plateform",      },
       {
         title: "International Sales",
         company: "Pioneer Material Precision Tech, Inc.",
         timeframe: "2019-2020",
         summary:
-          "I manage schedule of porducst (components of elastomer and it's combination of dissimilar materials) from proto build to ramp build, handle complaint from FATP and pormote product and solution to end-customer",
+          "I manage schedule of porducst (components of elastomer and it's combination of dissimilar materials) from proto build to ramp build, handle complaint from FATP and pormote product and promote our solution to end-customer",
       },
       {
         title: "Administrative Asistant",
@@ -54,7 +53,7 @@ export const enFolio: folio = {
       },
       {
         type: "Framworks & Libaray",
-        list: ["React & Hooks", "Redux", "CSS in JS", "SCSS"],
+        list: ["React", "Redux", "CSS in JS", "SCSS"],
       },
       {
         type: "Utilities",
