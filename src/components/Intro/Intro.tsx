@@ -1,9 +1,10 @@
 import "./intro.scss";
 import { Parallax } from "react-scroll-parallax";
+import NextPageButton from "../utils/NextPageBtn";
 
 export interface ResumeProps {
   headline: string,
-  typed: string[]
+  typed: string[],
 }
 
 function Intro(props: ResumeProps) {
@@ -20,6 +21,7 @@ function Intro(props: ResumeProps) {
           </Parallax>
         ))}
       </div>
+      <NextPageButton />
     </div>
   );
 }

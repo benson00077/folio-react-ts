@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Resume from "./components/Resume/Resume";
 // Assets
 import littlePrinceFly from "./assets/little-prince-fly.png";
@@ -18,19 +18,22 @@ import Planets from "./components/Planets";
 
 function App() {
   const folio = useSelector((state: RootState) => state.portfolio);
-  const [pageYOffset, setPageYOffset] = useState(0)
+  const [pageYOffset, setPageYOffset] = useState(0);
 
-  const {scrollY, scrollDirection} = useScroll()
-  
+  const { scrollY, scrollDirection } = useScroll();
+
+  const isStary = process.env.NODE_ENV !== "development";
+
   return (
     <ParallaxProvider>
-      <Background stars={true} startsNum={[15, 30, 70]}>
+      <Background stars={isStary} startsNum={[15, 30, 70]}>
         <SwitchLanguage />
         <NavBar />
-        <Intro {...folio.intro} />
-
+        <Intro {...folio.intro}/>
         {/* <SvgBanner/> */}
-
+        <div style={{ position: "fixed", bottom: "2px", right: "2px" }}>
+          {pageYOffset}
+        </div>
         <Resume />
 
         <Planets />

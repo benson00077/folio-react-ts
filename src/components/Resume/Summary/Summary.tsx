@@ -5,6 +5,7 @@ import profilePhoto from "../../../assets/bensontuan.png";
 // store
 import { useSelector } from "react-redux";
 import { RootState } from "../../../store/reducers/rootReducer";
+import NextPageButton from "../../utils/NextPageBtn";
 
 function Summary() {
 
@@ -37,6 +38,8 @@ function Summary() {
           <p key={i}>{sum}</p>
         ))}
       </div>
+
+      <NextPageButton/>
     </div>
   );
 }
